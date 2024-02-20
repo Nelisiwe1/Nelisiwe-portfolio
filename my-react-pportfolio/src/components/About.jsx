@@ -3,14 +3,16 @@ import img from '../assets/about.png';
 
 const About = () => {
   return (
-    <div id="About" className="flex flex-col items-center">
-      <h1 className="mt-5">About</h1>
+    <div id="About">
+      <div className="flex justify-center items-center mt-5">
+  <h1 className="text-center font-bold text-5xl">About</h1>
+</div>
       <div className="flex flex-col lg:flex-row gap-8 lg:gap-20 items-center">
         <img
           src={img}
           width={290}
           height={290}
-          className="rounded-full border-2 p-1 border-fuchsia-500 img_glow mb-8 lg:mb-0"
+          className="rounded-3xl border-2 p-1 border-fuchsia-500 img_glow mb-8 lg:mb-0"
         />
         <div className="lg:px-10 lg:py-0 py-20 text-center lg:text-start">
           <div className="h-full lg:py-40 flex flex-col justify-center lg:items-start items-center text-black">
