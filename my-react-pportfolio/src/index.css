@@ -1,4 +1,24 @@
-:root {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.glow { 
+  transition: all .3s ease-in ease-in-out
+}
+
+.glow:hover{
+ box-shadow: 0 0 25px rgb(251, 185, 147)
+}
+
+.img_glow{
+  box-shadow: 0 0 55px rgb(206, 71, 193);
+}
+
+.b_glow{
+  box-shadow: 0 0 55px rgb(206, 71, 193);
+}
+
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -11,7 +31,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+} */
 
 /* Sidebar.css */
 
@@ -71,7 +91,7 @@
   background-color: #444;
 }
 
-.content {
+/* .content {
   padding: 16px;
   transition: margin-left .5s;
 }
@@ -116,13 +136,13 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */
 
 @media (prefers-color-scheme: light) {
-  :root {
+  /* :root {
     color: #213547;
     background-color: #ffffff;
-  }
+  } */
   a:hover {
     color: #747bff;
   }

@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
-import './App.css';
+import './index.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Sidebar from './Sidebar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import Home from './components/Home';
 import About from './components/About';
-import Service from './components/Service';
+import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
+import Project from './components/Project';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +28,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/services" element={<Service />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/project" element={<Project />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>

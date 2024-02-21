@@ -15,9 +15,7 @@ const Home = () => {
 
      
 
-      
-
-        {/* Text Content */}
+      {/* Text Content */}
         <div className="text-center text-white">
   <h1 className="text-5xl inline-block p-2">
     <span className="border-black border-4 noto-serif">Nelisiwe Ngqeme</span>
