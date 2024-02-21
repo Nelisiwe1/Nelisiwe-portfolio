@@ -8,7 +8,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
-import Project from './components/Project';
+import Experience from './components/Experience';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,7 +29,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/project" element={<Project />} />
+            <Route path="/experience" element={<Experience />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>

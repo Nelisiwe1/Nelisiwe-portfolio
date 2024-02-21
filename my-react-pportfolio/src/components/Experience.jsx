@@ -3,7 +3,7 @@ import img1 from '../assets/project2.jpg';
 import img2 from '../assets/project3.jpg';
 import img3 from '../assets/project4.jpg';
 
-const Project = () => {
+const Experience = () => {
   return (
     <div>
      <div className="bg-cover bg-center bg-no-repeat bg-fixed h-screen" style={{backgroundImage: 'url("e-bak.jpg")'}}>
@@ -23,4 +23,4 @@ const Project = () => {
   );
 }
 
-export default Project;
+export default Experience;
