@@ -12,3 +12,4 @@ export const Homebackground = () => {
 };
 
 export default Homebackground;
+
