@@ -14,10 +14,17 @@ const Home = () => {
         
         {/* Social Media Icons */}
         <div className="flex justify-center mb-4">
-          <img src="insta.png" alt="Instagram" className="w-10 h-10 mr-4" />
-          <img src="link.png" alt="LinkedIn" className="w-10 h-10 mr-4" />
-          <img src="git.png" alt="Location" className="w-10 h-10" />
-        </div>
+  <a href="https://www.instagram.com">
+    <img src="insta.png" alt="Instagram" className="w-10 h-10 mr-4" />
+  </a>
+  <a href="www.linkedin.com/in/nelisiwe-ngqeme-90373b225">
+    <img src="link.png" alt="LinkedIn" className="w-10 h-10 mr-4" />
+  </a>
+  <a href="https://github.cohttps://github.com/Nelisiwe1?tab=repositoriesm">
+    <img src="git.png" alt="GitHub" className="w-10 h-10" />
+  </a>
+</div>
+
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row">

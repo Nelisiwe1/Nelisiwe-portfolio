@@ -6,13 +6,14 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import backgroundImage from '../assets/e-bak.jpg'
 
-const WorkIcon = () => <></>;
+
 
 const Experience = () => {
   return (
-    <div className="experience" style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <div className="experience bg-cover bg-center bg-no-repeat bg-fixed h-screen relative" style={{ backgroundImage: `url(${backgroundImage})`, backgroundPosition: 'center' }}>
+  <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center h-full">
 
-    <div className="experience">
+    <div className="experience" >
       <h1  className='text-center font-bold text-3xl'>Education & Experience</h1>
       <div className="vertical-timeline-container">
         <VerticalTimeline layout="1-column">
@@ -64,6 +65,7 @@ const Experience = () => {
           </VerticalTimelineElement>
         </VerticalTimeline>
       </div>
+    </div>
     </div>
     </div>
   );

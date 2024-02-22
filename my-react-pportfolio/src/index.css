@@ -39,6 +39,7 @@
 .sidebar {
   height: 100%;
   width: 0;
+  text-shadow:#f1f1f1;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -58,6 +59,7 @@
   text-decoration: none;
   font-size: 25px;
   color: #818181;
+text-emphasis-color: #1110;
   display: block;
   transition: 0.3s;
 }
@@ -66,18 +68,32 @@
   color: #f1f1f1;
 }
 
+.sidebar-image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.sidebar-image {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border: 2px solid #818181;
+}
+
 .closebtn {
   position: absolute;
-  top: 0;
-  right: 25px;
+  top: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
   font-size: 36px;
-  margin-left: 50px;
+  color: #818181;
 }
 
 .closebtn:hover {
   color: white;
   cursor: pointer;
 }
+
 
 /* Container Styles */
 .container {
@@ -228,6 +244,43 @@
   font-size: 14px;
   color: #999;
 }
+
+.project-container {
+  position: relative; /* Ensure absolute positioning for tooltip */
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.project-container:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Tooltip */
+.project-container .tooltip {
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 4px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.project-container:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+
 
 .experience-container {
   max-width: 800px; /* Adjust maximum width as per your requirement */
