@@ -7,7 +7,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_qyadbdk', 'template_htraiff', form.current, 'YOUR_PUBLIC_KEY')
+    emailjs.sendForm('service_qyadbdk', 'template_3yudpgu', form.current, 'Lefj3CzsKkK73JmCp')
       .then((result) => {
         console.log(result.text)
       }, (error) => {
@@ -67,11 +67,11 @@ const Contact = () => {
     <h2 className='text-center font-bold text-2xl'>Send Message</h2>
     <div className="mb-4">
         <label htmlFor="name" className="block text-gray-700 text-sm font-bold mb-2">Name</label>
-        <input type="text" id="name" name="from_name" placeholder="Enter your name" className="box-input" />
+        <input type="text" id="name" name="user_name" placeholder="Enter your name" className="box-input" />
     </div>
     <div className="mb-4">
         <label htmlFor="email" className="block text-gray-700 text-sm font-bold mb-2">Email</label>
-        <input type="email" id="email" name="from_email" placeholder="Enter your email" className="box-input" />
+        <input type="email" id="email" name="user_email" placeholder="Enter your email" className="box-input" />
     </div>
     <div className="mb-4">
         <label htmlFor="number" className="block text-gray-700 text-sm font-bold mb-2">Phone Number</label>

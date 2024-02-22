@@ -19,8 +19,8 @@ const Home = () => {
         </div>
 
         {/* Buttons */}
-        <div className="flex">
-          <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mr-2">
+        <div className="flex flex-col sm:flex-row">
+          <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mb-2 sm:mb-0 sm:mr-2">
             Download CV
           </button>
           <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
