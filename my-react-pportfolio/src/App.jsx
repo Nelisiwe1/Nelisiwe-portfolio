@@ -72,9 +72,10 @@ function App() {
       <Router>
         <div className="App">
           {/* Button to toggle sidebar */}
-          <button className="openbtn" onClick={toggleSidebar}>
-            <FontAwesomeIcon icon={faBars} size="2x" />
-          </button>
+          
+  <button className="openbtn" onClick={toggleSidebar}>
+    <FontAwesomeIcon icon={faBars} size="2x" />
+  </button>
           {/* Sidebar component */}
           <Sidebar isOpen={isOpen} toggle={toggleSidebar} />
           {/* Main content area */}
@@ -88,15 +89,25 @@ function App() {
               <Route
                 path="/timeline"
                 element={
-                  <div className="container-t w-full h-auto mx-auto py-8 gradient-bg">
-                    <h1 className="text-4xl font-bold mb-8 text-center">My Timeline</h1>
-                    {/* Timeline component */}
-                    <div data-aos="fade-left" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-                      {/* Render Education and Experience timelines */}
-                      <Timeline title="Education" data={educationData} />
-                      <Timeline title="Experience" data={experienceData} />
-                    </div>
-                  </div>
+                  <div className="container-t background-image-container w-full h-auto mx-auto py-8 gradient-bg flex justify-center items-center">
+ <div>
+ <div class="float-right w-1/3 mt-8">
+  <img src="ex.jpg" alt="Image Description" class="w-full h-auto"/>
+</div>
+
+
+    <h1 className="text-4xl font-bold mb-8 text-center">My Timeline</h1>
+    {/* Timeline component */}
+    <div data-aos="fade-left" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+      {/* Render Education and Experience timelines */}
+      <Timeline title="Education" data={educationData} />
+      <Timeline title="Experience" data={experienceData} />
+    </div>
+</div>
+
+</div>
+
+                
                 }
               />
               <Route path="/contact" element={<Contact />} />

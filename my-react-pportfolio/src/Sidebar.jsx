@@ -17,7 +17,7 @@ const Sidebar = ({ isOpen, toggle }) => {
 
   return (
     // Sidebar container with conditional class based on isOpen prop
-    <div className={`sidebar ${isOpen ? 'open' : ''}`}>
+    <div className={`sidebar ${isOpen ? 'open' : 'closed'}`}>
       {/* Button to close the sidebar */}
       <button className="closebtn" onClick={toggle}>
         <FontAwesomeIcon icon={faTimes} />
