@@ -5,8 +5,10 @@ import { faHome, faBriefcase, faEnvelope, faTimes, faUser } from '@fortawesome/f
 
 import sidebarImage from './assets/about.png'; // Import your sidebar image
 
+// Sidebar component definition
 const Sidebar = ({ isOpen, toggle }) => {
 
+  // Function to handle link click
   const handleLinkClick = () => {
     if (isOpen) {
       toggle(); // Close the sidebar if it's open
@@ -14,15 +16,19 @@ const Sidebar = ({ isOpen, toggle }) => {
   };
 
   return (
+    // Sidebar container with conditional class based on isOpen prop
     <div className={`sidebar ${isOpen ? 'open' : ''}`}>
+      {/* Button to close the sidebar */}
       <button className="closebtn" onClick={toggle}>
         <FontAwesomeIcon icon={faTimes} />
       </button>
 
+      {/* Container for the sidebar image */}
       <div className="sidebar-image-container">
         <img src={sidebarImage} alt="Sidebar" className="sidebar-image" />
       </div>
 
+      {/* Navigation links */}
       <Link to="/" onClick={handleLinkClick}>
         <FontAwesomeIcon icon={faHome} />
         Home
@@ -35,7 +41,7 @@ const Sidebar = ({ isOpen, toggle }) => {
         <FontAwesomeIcon icon={faBriefcase} />
         Portfolio
       </Link>
-      <Link to="/experience" onClick={handleLinkClick}>
+      <Link to="/timeline" onClick={handleLinkClick}>
         <FontAwesomeIcon icon={faEnvelope} />
         Experience
       </Link>
@@ -43,9 +49,8 @@ const Sidebar = ({ isOpen, toggle }) => {
         <FontAwesomeIcon icon={faEnvelope} />
         Contact
       </Link>
-  
     </div>
   );
 }
 
-export default Sidebar;
+export default Sidebar; // Export Sidebar component
