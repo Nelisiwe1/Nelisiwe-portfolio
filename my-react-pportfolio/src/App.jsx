@@ -21,7 +21,7 @@ function App() {
     <Router>
       <div className="App">
         <button className="openbtn" onClick={toggleSidebar}>
-          <FontAwesomeIcon icon={faBars} />
+        <FontAwesomeIcon icon={faBars} size="2x" />
         </button>
         <Sidebar isOpen={isOpen} toggle={toggleSidebar} />
         <div className="content">

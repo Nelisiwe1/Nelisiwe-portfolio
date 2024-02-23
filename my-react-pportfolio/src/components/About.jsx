@@ -15,7 +15,7 @@ const About = () => {
   }, []);
   
   return (
-    <div id="About">
+    <div id="About" style={{ background: 'linear-gradient(90deg, #CCCCCC 0%, #E0E0E0 100%)' }}>
       <div className="flex justify-center items-center mt-5">
         <h1 className="text-center font-bold text-5xl">About</h1>
       </div>
@@ -24,7 +24,7 @@ const About = () => {
           src={img}
           width={290}
           height={290}
-          className="rounded-3xl border-2 p-1 border-fuchsia-500 img_glow mb-8 lg:mb-0"
+          className="rounded-3xl border-2 p-1 border-grey-300 img_glow mb-8 lg:mb-0"
           alt="About"
         />
         <div className="lg:px-10 lg:py-0 py-20 text-center lg:text-start">
@@ -52,7 +52,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="container rounded-3xl border-2 p-1 border-fuchsia-500 img_glow mb-8 lg:mb-0 mt-4 lg:mt-4" style={{ marginTop: '-80px' }}>
+      <div className="container rounded-3xl border-2 p-1 border-white-500 img_glow mb-8 lg:mb-0 mt-4 lg:mt-4" style={{ marginTop: '-80px' }}>
         <h1 className='text-center font-bold text-3xl'>Skills</h1>
         <div className="skill-box mt-4">
           <span className="title">HTML</span>

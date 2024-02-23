@@ -14,7 +14,7 @@ const Experience = () => {
   <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center h-full">
 
     <div className="experience" >
-      <h1  className='text-center font-bold text-3xl'>Education & Experience</h1>
+    <h1 className='text-center font-bold text-4xl' style={{ color: '#fff' }}>Education & Experience</h1>
       <div className="vertical-timeline-container">
         <VerticalTimeline layout="1-column">
           <VerticalTimelineElement

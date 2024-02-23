@@ -6,6 +6,13 @@ import { faHome, faBriefcase, faEnvelope, faTimes, faUser } from '@fortawesome/f
 import sidebarImage from './assets/about.png'; // Import your sidebar image
 
 const Sidebar = ({ isOpen, toggle }) => {
+
+  const handleLinkClick = () => {
+    if (isOpen) {
+      toggle(); // Close the sidebar if it's open
+    }
+  };
+
   return (
     <div className={`sidebar ${isOpen ? 'open' : ''}`}>
       <button className="closebtn" onClick={toggle}>
@@ -16,23 +23,23 @@ const Sidebar = ({ isOpen, toggle }) => {
         <img src={sidebarImage} alt="Sidebar" className="sidebar-image" />
       </div>
 
-      <Link to="/">
+      <Link to="/" onClick={handleLinkClick}>
         <FontAwesomeIcon icon={faHome} />
         Home
       </Link>
-      <Link to="/about">
+      <Link to="/about" onClick={handleLinkClick}>
         <FontAwesomeIcon icon={faUser} />
         About
       </Link>
-      <Link to="/portfolio">
+      <Link to="/portfolio" onClick={handleLinkClick}>
         <FontAwesomeIcon icon={faBriefcase} />
         Portfolio
       </Link>
-      <Link to="/experience">
+      <Link to="/experience" onClick={handleLinkClick}>
         <FontAwesomeIcon icon={faEnvelope} />
         Experience
       </Link>
-      <Link to="/contact">
+      <Link to="/contact" onClick={handleLinkClick}>
         <FontAwesomeIcon icon={faEnvelope} />
         Contact
       </Link>
@@ -42,5 +49,3 @@ const Sidebar = ({ isOpen, toggle }) => {
 }
 
 export default Sidebar;
-
-

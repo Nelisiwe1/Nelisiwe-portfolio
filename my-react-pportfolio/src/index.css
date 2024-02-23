@@ -12,7 +12,7 @@
 }
 
 .img_glow {
-  box-shadow: 0 0 55px rgb(206, 71, 193);
+  box-shadow: 0 0 55px rgb(255, 165, 0);
 }
 
 .b_glow {
@@ -33,6 +33,14 @@
   height: 100%;
   object-fit: cover;
   opacity: 0.75;
+}
+
+.flex a img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.flex a img:hover {
+  transform: scale(1.1); /* You can adjust the scale factor as per your preference */
 }
 
 /* Sidebar Styles */
@@ -94,6 +102,16 @@ text-emphasis-color: #1110;
   cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 0;
+    overflow-x: hidden;
+  }
+
+  .sidebar.open {
+    width: 100%; /* Full width when sidebar is open on smaller screens */
+  }
+}
 
 /* Container Styles */
 .container {
@@ -282,11 +300,7 @@ text-emphasis-color: #1110;
 
 
 
-.experience-container {
-  max-width: 800px; /* Adjust maximum width as per your requirement */
-  margin: 0 auto;
-  padding: 20px;
-}
+
 
 /* Media query for tablet screens */
 @media (max-width: 768px) {
@@ -348,6 +362,64 @@ text-emphasis-color: #1110;
   }
 }
 
+/* conatct page*/
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+  .contact {
+    text-align: center;
+  }
+  .icons {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Add these styles to your CSS file */
+
+.experience-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.experience-background {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.experience-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.vertical-timeline-container {
+  width: 80%; /* Adjust as needed */
+  max-width: 800px; /* Adjust as needed */
+}
+
+@media (max-width: 768px) {
+  .vertical-timeline-container {
+    width: 90%; /* Adjust as needed */
+  }
+}
 
 
-/* Additional styling for responsiveness can be added as needed */
+
+
+
+
