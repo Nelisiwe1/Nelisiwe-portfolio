@@ -103,6 +103,18 @@ text-emphasis-color: #1110;
   cursor: pointer;
 }
 
+.background-image {
+  background-image: url('e-bak.jpg');
+  background-size: cover; /* Adjust the background size as needed */
+  background-repeat: no-repeat; /* Prevent the background from repeating */
+  /* You can add more background properties like position, attachment, etc. */
+  opacity: 0.8; /* Add opacity to the background */
+}
+
+
+
+
+
 @media screen and (max-width: 768px) {
   .sidebar {
     width: 0;

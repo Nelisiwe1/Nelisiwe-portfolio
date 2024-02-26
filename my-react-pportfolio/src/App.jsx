@@ -89,8 +89,8 @@ function App() {
               <Route
                 path="/timeline"
                 element={
-                  <div className="container-t background-image-container w-full h-auto mx-auto py-8 gradient-bg flex justify-center items-center">
- <div>
+                 
+<div class="background-image">
  <div class="float-right w-1/3 mt-8">
   <img src="ex.jpg" alt="Image Description" class="w-full h-auto"/>
 </div>
@@ -98,14 +98,18 @@ function App() {
 
     <h1 className="text-4xl font-bold mb-8 text-center">My Timeline</h1>
     {/* Timeline component */}
-    <div data-aos="fade-left" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-      {/* Render Education and Experience timelines */}
-      <Timeline title="Education" data={educationData} />
-      <Timeline title="Experience" data={experienceData} />
-    </div>
+    <div style={{ display: 'flex', justifyContent: 'center' }}>
+  <div data-aos="fade-left" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+    {/* Render Education and Experience timelines */}
+    <Timeline title="Education" data={educationData} />
+    <Timeline title="Experience" data={experienceData} />
+  </div>
 </div>
 
 </div>
+
+
+
 
                 
                 }

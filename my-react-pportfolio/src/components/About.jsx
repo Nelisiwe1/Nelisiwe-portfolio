@@ -35,7 +35,7 @@ const About = () => {
         <div className="lg:px-10 lg:py-0 py-20 text-center lg:text-start">
           <div data-aos='fade in' className="h-full lg:py-40 flex flex-col justify-center lg:items-start items-center text-black">
             {/* About Text */}
-            <p className='text-2xl'>
+            <p className='1xl'>
               I'm Nelisiwe Ngqeme, an IT enthusiast currently pursuing an
               advanced diploma in App Development after completing my IT
               diploma. I find immense joy in turning ideas into functional
