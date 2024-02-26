@@ -22,14 +22,14 @@ const About = () => {
       
       {/* Content Section */}
       <div data-aos='fade-up' className="flex flex-col lg:flex-row gap-8 lg:gap-20 items-center">
-        {/* Image Section */}
-        <img
-          src={img} // Image source
-          width={290}
-          height={290}
-          className="rounded-3xl border-2 p-1 border-grey-300 img_glow mb-8 lg:mb-0"
-          alt="About" // Image alt text
-        />
+      <img
+  src={img} // Image source
+  width={290}
+  height={290}
+  className="rounded-3xl border-2 p-1 border-grey-300 img_glow mb-8 lg:mb-0 mt-4 lg:mt-0" // Added mt-4 for small screens and mt-0 for larger screens
+  alt="About" // Image alt text
+/>
+
         
         {/* Text Section */}
         <div className="lg:px-10 lg:py-0 py-20 text-center lg:text-start">

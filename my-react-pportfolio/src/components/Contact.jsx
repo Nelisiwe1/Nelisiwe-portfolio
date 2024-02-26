@@ -55,7 +55,7 @@ const Contact = () => {
 
   return (
     <div className="bg-cover bg-center bg-no-repeat bg-fixed min-h-screen" style={{backgroundImage: 'url("c-back.jpg")'}}>
-      <div className="bg-black bg-opacity-60 w-full h-full flex flex-col justify-center items-center">
+    <div class="bg-black bg-opacity-60 min-h-screen flex flex-col justify-center items-center md:w-full md:h-screen">
 
         <h1 className='text-center font-bold text-5xl text-white mb-8'>Contact</h1>
         <div className="contact-container flex flex-col md:flex-row">
