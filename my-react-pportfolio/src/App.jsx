@@ -108,11 +108,7 @@ function App() {
 
 </div>
 
-
-
-
-                
-                }
+ }
               />
               <Route path="/contact" element={<Contact />} />
             </Routes>
