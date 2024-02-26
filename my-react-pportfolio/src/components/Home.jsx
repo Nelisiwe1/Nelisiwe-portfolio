@@ -13,7 +13,7 @@ const Home = () => {
   <h1 className="text-5xl inline-block p-2 noto-serif mb-4">
     Nelisiwe<span className='text-orange'> Ngqeme</span>
   </h1>
-  <p className="noto-serif mb-4 text-3xl">Software developer.</p>
+  <p className="noto-serif mb-4 text-3xl ml-6">Software developer.</p>
   
   {/* Social Media Icons */}
   <div className="flex justify-center mb-4">
