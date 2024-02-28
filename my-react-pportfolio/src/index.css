@@ -41,7 +41,7 @@
 }
 
 .flex a img:hover {
-  transform: scale(1.1); /* You can adjust the scale factor as per your preference */
+  transform: scale(1.1); 
 }
 
 /* Sidebar Styles */
@@ -103,15 +103,6 @@ text-emphasis-color: #1110;
   color: white;
   cursor: pointer;
 }
-
-.background-image {
-  background-image: url('e-bak.jpg');
-  background-size: cover; /* Adjust the background size as needed */
-  background-repeat: no-repeat; /* Prevent the background from repeating */
-  /* You can add more background properties like position, attachment, etc. */
-  opacity: 0.8; /* Add opacity to the background */
-}
-
 
 
 
