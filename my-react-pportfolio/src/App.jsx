@@ -92,7 +92,7 @@ function App() {
                  
 <div class="background-image">
  <div class="float-right w-1/3 mt-8">
-  <img src="ex.jpg" alt="Image Description" class="w-full h-auto"/>
+  <img src="ex.webp" alt="Experience pic" class="w-full h-auto"/>
 </div>
 
 
