@@ -10,11 +10,14 @@ const Home = () => {
         <div class="text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
           
 
-  <h1 className="text-5xl inline-block p-2 noto-serif mb-4">
-    Nelisiwe<span className='text-orange'> Ngqeme</span>
-  </h1>
-  <p className="noto-serif mb-4 text-3xl ml-6">Software developer.</p>
-  
+        <div className="font-LibreBaskerville">
+    <h1 className="text-5xl inline-block p-2 font-bold mb-4">
+        Nelisiwe<span className='text-orange'> Ngqeme</span>
+    </h1>
+    </div>
+    <p className="noto-serif mb-4 text-3xl ml-6 ">Software developer.</p>
+
+
   {/* Social Media Icons */}
   <div className="flex justify-center mb-4">
     <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
@@ -46,9 +49,9 @@ const Home = () => {
         <Homebackground />
 
         {/* Image Overlay */}
-        <div className="image-overlay">
+        {/* <div className="image-overlay">
           <img src="hero-b.webp" alt="Overlay" className="overlay-image" />
-        </div>
+        </div> */}
       </div>
     </div>
   );
