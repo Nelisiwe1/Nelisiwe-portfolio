@@ -46,9 +46,9 @@ const Home = () => {
         <Homebackground />
 
         {/* Image Overlay */}
-        <div className="image-overlay">
+        {/* <div className="image-overlay">
           <img src="hero-b.webp" alt="Overlay" className="overlay-image" />
-        </div>
+        </div> */}
       </div>
     </div>
   );
