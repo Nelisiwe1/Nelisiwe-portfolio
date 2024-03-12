@@ -52,7 +52,7 @@ function App() {
   const experienceData = [
     {
       title: 'Junior Software developer',
-      date: '2014 - Present',
+      date: '2024 - Present',
       description: 'Younglings Africa',
     },
     {
